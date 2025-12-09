@@ -1,0 +1,139 @@
+.hover-cart {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 350px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 1rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.hover-cart-header {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hover-cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hover-cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.hover-cart-details {
+  flex: 1;
+}
+
+.hover-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.quantity-controls button {
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.btn-remove {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.hover-cart-total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.hover-cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.hover-cart-actions .btn {
+  flex: 1;
+  margin: 0 0.25rem;
+  background-color: #1f2937;
+  color: white;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hover-cart-actions .btn:hover {
+  background-color: #4f46e5;
+}
+
+.empty-cart-text {
+  text-align: center;
+  color: #888;
+}
+
+@media (max-width: 480px) {
+  .hover-cart {
+    width: 90vw;
+    right: 5vw;
+    padding: 1rem 0.8rem;
+  }
+
+  .hover-cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hover-cart-item img {
+    margin-bottom: 0.5rem;
+  }
+
+  .quantity-controls {
+    justify-content: flex-start;
+  }
+
+  .hover-cart-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hover-cart-actions .btn {
+    margin: 0;
+  }
+
+  .hover-cart-total {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+}
